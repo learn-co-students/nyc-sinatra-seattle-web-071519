@@ -1,0 +1,10 @@
+<h1>NYC Sinatra Lab</h1>
+
+<h2><%=@figure.name%></h2>
+
+<% Landmark.where(:figure_id == @figure.id).each do |landmark|%>
+<h3><%=landmark.name%></h3>
+<% end %>
+
+<a class="button" href="/figures">Figures</a>
+<a class="button" href="/landmarks">Landmarks</a>

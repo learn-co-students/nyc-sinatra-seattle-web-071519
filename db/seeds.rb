@@ -69,3 +69,9 @@ title_list.each do |name, figure_hash|
   p.name = name
   p.save
 end
+
+FigureTitle.create({:figure_id => 2, :title_id => 3})
+FigureTitle.create({:figure_id => 3, :title_id => 3})
+FigureTitle.create({:figure_id => 3, :title_id => 2})
+FigureTitle.create({:figure_id => 9, :title_id => 1})
+FigureTitle.create({:figure_id => 1, :title_id => 4})

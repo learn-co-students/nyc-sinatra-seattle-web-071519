@@ -1,4 +1,10 @@
 <h1>NYC Sinatra Lab</h1>
 
+<h2>All Figures</h2>
+
+<%Figure.all.each do |figures| %>
+<%=figures.name%><br>
+<%end%>
+
 <a class="button" href="/figures">Figures</a>
 <a class="button" href="/landmarks">Landmarks</a>
